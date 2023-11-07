@@ -1,0 +1,48 @@
+import:
+  - ~/.config/alacritty/carbonfox.yml
+env:
+  TERM: alacritty
+window:
+  padding:
+    x: 6
+    y: 0
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.8
+  startup_mode: Fullscreen
+  title: Alacritty
+  dynamic_title: false
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: Ibm Plex Mono
+    style: Medium
+  bold:
+    family: Ibm Plex Mono
+    style: Bold
+  italic:
+    family: Ibm Plex Mono
+    style: Regular Italic
+  bold_italic:
+    family: Ibm Plex Mono
+    style: Bold Italic
+
+  size: 20.0
+  draw_bold_text_with_bright_colors: true
+
+live_config_reload: true
+
+cursor:
+  style:
+    shape: Underline
+    blinking: On
+  blink_interval: 250
+
+key_bindings:
+  - { key: F11, action: ToggleFullscreen }
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
